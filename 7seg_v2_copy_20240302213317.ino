@@ -9,12 +9,12 @@ const int segmentG = 8;
 const int segmentDP = 9;
 
 // Define pins for each digit of the 4-digit 7-segment display
-//const int digit1 = 10;
+const int digit1 = 10;
 const int digit2 = 11;
 const int digit3 = 12;
 const int digit4 = 13;
 
-const int reset = 10; 
+const int reset = 14; 
 
 // Define the truth table for displaying numbers 0 to 9 on the 7-segment display
 const byte numbers[][7] = {
@@ -42,12 +42,12 @@ void setup() {
   pinMode(segmentDP, OUTPUT);
   
   // Set digit pins as outputs
-  //pinMode(digit1, OUTPUT);
+  pinMode(digit1, OUTPUT);
   pinMode(digit2, OUTPUT);
   pinMode(digit3, OUTPUT);
   pinMode(digit4, OUTPUT);
 
-  // Set pin 10 as input for the reset button
+  // Set pin as input for the reset button
   pinMode(reset, INPUT);
 }
 
@@ -82,7 +82,7 @@ void loop() {
 
 void displayNumber(int num) {
   // Turn off all digits except the first one
-  //digitalWrite(digit1, HIGH);
+  digitalWrite(digit1, HIGH);
   digitalWrite(digit2, HIGH);
   digitalWrite(digit3, HIGH);
   digitalWrite(digit4, LOW);
