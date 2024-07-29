@@ -1,5 +1,7 @@
 # Shotclock Sequencing W23
 
+Breakdown Excel Link: https://uofwaterloo-my.sharepoint.com/:x:/g/personal/ringette_uwaterloo_ca/EeAIIiJObBNAkr9xA27p940BtNHL84Pmpw8fnohoynQmCw?e=SNBagC
+
 ## Helpful links
 
 |Description                  |Link|
